@@ -310,12 +310,12 @@ which are versions of the file entity that belongs to a project.
 \begin{figure*}
   \centering
   \includegraphics[width=0.8\textwidth]{media/Bumper-Model.png}
-  \caption{BUMPER Metamodel\label{fig:bumper-metamodel}}
+  \caption{Metamodel\label{fig:bumper-metamodel}}
 \end{figure*}
 
-The BUMPER data model contains information found
+Our dataset contains information found
 in many common bug reporting and source code versioning
-systems. More particularly, BUMPER data model revolves
+systems. More particularly, it revolves
 around three main entities (1) Bug reports, (2) Changesets,
 and (3) Hunks. Bug reports can contain zero or many
 changesets---some bug reports such as duplicates do not
@@ -393,14 +393,14 @@ In this section, we present how developers and researchers have and could use ou
 \subsection{Finding bug-fix}
 \label{subs:Bug Fixing}
 
-BUMPER\cite{Nayrolles2015d,Nayrolles2016}\footnote{https://bumper-app.com}, is a search engine for bug-fix in same way as Google is a search engine for websites. BUMPER uses Apache Solr\cite{Nayrolles2014b} to provide natural language searches of bug report and fixes.
+BUMPER~\cite{Nayrolles2015d,Nayrolles2016}\footnote{https://bumper-app.com}, is a search engine for bug-fix in same way as Google is a search engine for websites. BUMPER uses Apache Solr~\cite{Nayrolles2014b} to provide natural language searches of bug report and fixes.
 This can help developers, engineers and computer science students not only to find patch to a given bug but also discover how experienced open-source developers write fixes.
 
 \subsection{Studying bug-fix relationships and patterns}
 \label{subs:Studying bug-fix relationships}
 
 We see our dataset as way to facilitating research in the area
-of mining bug repositories and more particulary, bug-fix relationships and patterns\cite{Kim2013e,Saha2014,Martinez2014}. Studying software repositories to gain insights
+of mining bug repositories and more particulary, bug-fix relationships and patterns~\cite{Kim2013e,Saha2014,Martinez2014}. Studying software repositories to gain insights
 into the quality of the code is a common practice.
 However, this task requires
 time and skills in order to download and link all the pieces of informations
@@ -409,7 +409,7 @@ needed for adequate mining. Moreover, our dataset is available in JSON\footnote{
 \subsection{Comparing Approaches}
 \label{sub:Comparing Approaches}
 
-In bug reproduction\cite{Chen2013,Nayrolles2015}, prediction\cite{Kamei2010,Bhattacharya2011}, triage\cite{Anvik2006,Jeong2009m,Kong2011} and other related fields of software maintenance and evolution, comparing approaches is often taxing as datasets might not be publicly avalaible of the way data are gathered can be unclear.
+In bug reproduction~\cite{Chen2013,Nayrolles2015}, prediction~\cite{Kamei2010,Bhattacharya2011}, triage~\cite{Anvik2006,Jeong2009,Kong2011} and other related fields of software maintenance and evolution, comparing approaches is often taxing as datasets might not be publicly avalaible of the way data are gathered can be unclear.
 With our dataset, approches could be more easily compared to each other.
 
 In short, our dataset that can be used by software practitioners
