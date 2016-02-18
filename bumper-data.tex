@@ -149,7 +149,7 @@ that these repositories use different interfaces and ways to
 access and represent data, which hinders productivity and
 reuse.
 To address this, we introduce a large dataset of 700,000 fixed
-bugs belonging to 1,900 different project. This dataset follows a
+bugs belonging to 1,900 different projects. This dataset follows a
 clear infrastructure and allows developers and researchers interested in
 mining data from different (and heterogeneous) repositories to do so easily.
 \end{abstract}
@@ -207,7 +207,7 @@ value to the analysis itself.
 For the time being, our dataset, which is available for download at
 https://bumper-app.com/msr16, aggregates bug report and fixes from
 Eclise\footnote{https://www.eclipse.org/}, Gnome\footnote{https://www.gnome.org/}, the Apache Software fundation\footnote{http://www.apache.org/} and Netbeans\footnote{https://netbeans.org/}.
-Moreover, our dataset associates each bug report (bug description, reportee, assignee, comments, ...) and its related fixes.
+Moreover, our dataset associates each bug report (bug description, reporter, assignee, comments, ...) and its related fixes.
 These systems use Bugzilla\footnote{https://www.bugzilla.org/} or Jira\footnote{https://www.atlassian.com/software/jira} as their bug report system and Git\footnote{https://git-scm.com/} or Mercurial\footnote{https://www.mercurial-scm.org/} as their source code versioning engine.
 
 \section{Data Collection}
@@ -218,7 +218,7 @@ data from various bug report tracking and code
 versioning systems. In this example, we extract raw data
 from two bug tracking systems, Bugzilla and Jira with their
 corresponding source code versioning systems, Git and
-Mercurial. The extracted data is consolidated in one
+Mercurial. The extracted data is consolidated into one
 database where we associate
 each bug report with its fix. Note that this association is
 based on the general practice where developers create a link
@@ -284,7 +284,7 @@ As we can see from in Table \ref{tab:datasets}, our consolidated dataset contain
 1,645,252 changesets, 457,663 files that have been modified to fix the bugs
 and 1,930 distinct software projects belonging to four major organizations.
 We also collected more than two billions lines of code impacted by the
-changesets, identified tens of thousands sub-projects and unique contributors
+changesets, identified tens of thousands of sub-projects and unique contributors
 to these bug report systems.
 
 
@@ -393,24 +393,24 @@ In this section, we present how developers and researchers have and could use ou
 \subsection{Finding bug-fix}
 \label{subs:Bug Fixing}
 
-BUMPER~\cite{Nayrolles2015d,Nayrolles2016}\footnote{https://bumper-app.com}, is a search engine for bug-fix in same way as Google is a search engine for websites. BUMPER uses Apache Solr~\cite{Nayrolles2014b} to provide natural language searches of bug report and fixes.
-This can help developers, engineers and computer science students not only to find patch to a given bug but also discover how experienced open-source developers write fixes.
+BUMPER~\cite{Nayrolles2015d,Nayrolles2016}\footnote{https://bumper-app.com}, is a search engine for bug-fix in the same way as Google is a search engine for websites. BUMPER uses Apache Solr~\cite{Nayrolles2014b} to provide natural language searches of bug report and fixes.
+This can help developers, engineers and computer science students not only to find a patch to a given bug but also discover how experienced open-source developers write fixes.
 
 \subsection{Studying bug-fix relationships and patterns}
 \label{subs:Studying bug-fix relationships}
 
-We see our dataset as way to facilitating research in the area
-of mining bug repositories and more particulary, bug-fix relationships and patterns~\cite{Kim2013e,Saha2014,Martinez2014}. Studying software repositories to gain insights
+We see our dataset as a way to facilitating research in the area
+of mining bug repositories and more particularly, bug-fix relationships and patterns~\cite{Kim2013e,Saha2014,Martinez2014}. Studying software repositories to gain insights
 into the quality of the code is a common practice.
 However, this task requires
-time and skills in order to download and link all the pieces of informations
+time and skills in order to download and link all the pieces of information
 needed for adequate mining. Moreover, our dataset is available in JSON\footnote{https://bumper-app.com/msr16.json}, CSV\footnote{https://bumper-app.com/msr16.csv} and XML\footnote{https://bumper-app.com/msr16.xml} so one can choose his favorite format to work with.
 
 \subsection{Comparing Approaches}
 \label{sub:Comparing Approaches}
 
-In bug reproduction~\cite{Chen2013,Nayrolles2015}, prediction~\cite{Kamei2010,Bhattacharya2011}, triage~\cite{Anvik2006,Jeong2009,Kong2011} and other related fields of software maintenance and evolution, comparing approaches is often taxing as datasets might not be publicly avalaible of the way data are gathered can be unclear.
-With our dataset, approches could be more easily compared to each other.
+In bug reproduction~\cite{Chen2013,Nayrolles2015}, prediction~\cite{Kamei2010,Bhattacharya2011}, triage~\cite{Anvik2006,Jeong2009,Kong2011} and other related fields of software maintenance and evolution, comparing approaches is often taxing as datasets might not be publicly available of the way data are gathered can be unclear.
+With our dataset, approaches could be more easily compared to each other.
 
 In short, our dataset that can be used by software practitioners
 and researchers to analyse (efficiently) bugs and their fixes without having
