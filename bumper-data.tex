@@ -138,10 +138,9 @@ Abdelwahab Hamou-Lhadj\\
 
 \maketitle
 \begin{abstract}
-In recent years, mining bug report (BR) and their related fixes
+In recent years, mining bug reports (BR) and their related fixes
 has perhaps been one of the most active software
 engineering research fields. There exists many open source and
-many open source and
 proprietary bug tracking and source code versioning systems
 that developers and researchers can use to examine bug
 reports so as to reason about software quality. The issue is
@@ -205,9 +204,9 @@ etc. These tasks are not only time consuming but add no
 value to the analysis itself.
 
 For the time being, our dataset, which is available for download at
-https://bumper-app.com/msr16, aggregates bug report and fixes from
-Eclise\footnote{https://www.eclipse.org/}, Gnome\footnote{https://www.gnome.org/}, the Apache Software fundation\footnote{http://www.apache.org/} and Netbeans\footnote{https://netbeans.org/}.
-Moreover, our dataset associates each bug report (bug description, reporter, assignee, comments, ...) and its related fixes.
+https://bumper-app.com/msr16, aggregates bug reports and fixes from
+Eclipse\footnote{https://www.eclipse.org/}, Gnome\footnote{https://www.gnome.org/}, the Apache Software fundation\footnote{http://www.apache.org/} and Netbeans\footnote{https://netbeans.org/}.
+Moreover, our dataset associates each bug report (bug description, reporter, assignee, comments, ...) to its related fixes.
 These systems use Bugzilla\footnote{https://www.bugzilla.org/} or Jira\footnote{https://www.atlassian.com/software/jira} as their bug report system and Git\footnote{https://git-scm.com/} or Mercurial\footnote{https://www.mercurial-scm.org/} as their source code versioning engine.
 
 \section{Data Collection}
@@ -244,7 +243,7 @@ These projects cover 16 years of development from 1999 to 2015.
 Gnome is a free desktop environment, mainly developed in C and C++.
 Eclipse and Netbeans are integrated development environments (IDEs) for
 developing with many programming languages, including Java, PHP, and C/C++.
-Finally, The Apache Software Foundation (ASF) is a non-profit public charity
+Finally, the Apache Software Foundation (ASF) is a non-profit public charity
 established in 1999, that provides services and support for many like-minded
 software project communities of individuals who choose to join the ASF.
 The extracted data is consolidated in one database where we associate each bug report with its fix.
@@ -254,7 +253,7 @@ Gnome, Eclipse and Apache Software Foundation projects are based on Git
 The characteristics of the five aggregated datasets
 are presented in Table~\ref{tab:summary}.
 
-We chose to use with these systems to have data coming from
+We chose to use these systems to have data coming from
 diverse code versioning and bug tracking systems.
 Also, Gnome, Eclipse, Netbeans and the Apache Software Foundation exhibit a
 great deal of diversity in terms of the programming
@@ -280,7 +279,7 @@ Total            & 732,406         & 1,645,252   & 457,663        & 1,930       
 \end{tabular}
 \end{table}
 
-As we can see from in Table \ref{tab:datasets}, our consolidated dataset contains 732,406 bugs,
+As we can see from Table \ref{tab:datasets}, our consolidated dataset contains 732,406 bugs,
 1,645,252 changesets, 457,663 files that have been modified to fix the bugs
 and 1,930 distinct software projects belonging to four major organizations.
 We also collected more than two billions lines of code impacted by the
@@ -393,7 +392,7 @@ In this section, we present how developers and researchers have and could use ou
 \subsection{Finding bug-fix}
 \label{subs:Bug Fixing}
 
-BUMPER~\cite{Nayrolles2015d,Nayrolles2016}\footnote{https://bumper-app.com}, is a search engine for bug-fix in the same way as Google is a search engine for websites. BUMPER uses Apache Solr~\cite{Nayrolles2014b} to provide natural language searches of bug report and fixes.
+BUMPER~\cite{Nayrolles2015d,Nayrolles2016}\footnote{https://bumper-app.com} is a search engine for bug-fix in the same way as Google is a search engine for websites. BUMPER uses Apache Solr~\cite{Nayrolles2014b} to provide natural language searches of bug reports and fixes.
 This can help developers, engineers and computer science students not only to find a patch to a given bug but also discover how experienced open-source developers write fixes.
 
 \subsection{Studying bug-fix relationships and patterns}
@@ -409,7 +408,7 @@ needed for adequate mining. Moreover, our dataset is available in JSON\footnote{
 \subsection{Comparing Approaches}
 \label{sub:Comparing Approaches}
 
-In bug reproduction~\cite{Chen2013,Nayrolles2015}, prediction~\cite{Kamei2010,Bhattacharya2011}, triage~\cite{Anvik2006,Jeong2009,Kong2011} and other related fields of software maintenance and evolution, comparing approaches is often taxing as datasets might not be publicly available of the way data are gathered can be unclear.
+In bug reproduction~\cite{Chen2013,Jin2013,Nayrolles2015}, prediction~\cite{Kamei2010,Bhattacharya2011}, triaging~\cite{Anvik2006,Jeong2009,Kong2011} and other related fields of software maintenance and evolution, comparing approaches is often taxing as datasets might not be publicly available and the way data are gathered can be unclear.
 With our dataset, approaches could be more easily compared to each other.
 
 In short, our dataset that can be used by software practitioners
@@ -431,8 +430,8 @@ related to Netbeans, the Apache Software foundation's
 software, Eclipse and Gnome. The dataset is publicly available at https://bumper-app.com/msr16.
 
 As future work, we want to improve our dataset by
-adding more projects such as project hosted on Github and the Mozilla
-Foundation datasets. Also, we intend to add other features
+adding more projects such as projects hosted on Github\footnote{https://github.com} and the Mozilla
+Foundation\footnote{https://bugzilla.mozilla.org/} datasets. Also, we intend to add other features
 such as the number of times a bug is reopened, the number
 of times a bug has been duplicated, etc.
 
